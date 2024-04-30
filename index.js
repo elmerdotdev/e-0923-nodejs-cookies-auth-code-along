@@ -72,18 +72,6 @@ app.get('/logout', (req, res) => {
   res.redirect('/')
 })
 
-// Change theme route
-app.get('/change-theme', (req, res) => {
-  res.cookie('theme', 'dark').send('Theme set!')
-})
-
-// Delete cookie route
-app.get('/delete-cookie', (req, res) => {
-  res.clearCookie('temporary-cookie')
-  res.send('Cookie deleted!')
-})
-
-
 // Start server
 const PORT = process.env.BACKEND_PORT
 app.listen(PORT, () => {
