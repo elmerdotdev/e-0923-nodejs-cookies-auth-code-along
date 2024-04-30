@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+
+    <% if (success === '1') { %>
+      <p>You have successfully logged in!</p>
+    <% } %>
+
+    <h1>Welcome back, <%= user %></h1>
+    <a href="/logout">Log Out</a>
+
+<%- include('partials/footer') %>
